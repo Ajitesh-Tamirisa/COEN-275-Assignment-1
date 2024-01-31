@@ -33,12 +33,14 @@ class LibraryBook{
             }
         }
         void returnBook(){
+            cout<<"\n>>>>>>>>>>>>>>>>>>>>Returning a book>>>>>>>>>>>>>>>>>>>>"<<endl;
             if (!available) {
                 available = true;
                 cout<<"Thank you for returning '"<<title<<"' by "<<author<<"!"<<endl;
             } else {
                 cout << "The book is already available. Cannot return twice." <<endl;
             }
+            cout<<">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n"<<endl;
         }
         bool operator == (const LibraryBook& otherBook) const {
             if (title == otherBook.title && author == otherBook.author) 
