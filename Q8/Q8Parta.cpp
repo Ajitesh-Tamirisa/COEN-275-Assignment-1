@@ -52,6 +52,11 @@ class Product{
             }
             return *this;
         }
+
+        //Destructor
+        ~Product() {
+            cout << "\nDestructor executed"; 
+        }
 };
 
 int main() {
